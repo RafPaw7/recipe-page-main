@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+body {
+    max-width: 1100px;
+    background-color: hsl(14, 68%, 78%); /* Nutmeg */
+    font-family: 'Young Serif', serif;
+    font-size: 16px;
+    padding-inline-start: .5rem;
+    margin-block-start: 1rem;
+    margin-inline: auto;
+}
+
+h1, h2 {
+    font-size: 1.4rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700; /* Use 600 or 400 as needed */
+    padding: 10px;
+    color: rgba /* Dark Raspberry */
+    margin: 0;
+}
+
+/* ... rest of your CSS ... */
+
+
+img {
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+}
+
+header {
+	min-height: fit-content;
+	padding-block: .5rem;
+	background: rgba(80, 226, 124, 0.2);
+	Nutmeg: hsl(14, 45%, 36%);
+	Dark Raspberry: hsl(332, 51%, 32%);
+	White: hsl(0, 0%, 100%)
+	- Rose White: hsl(330, 100%, 98%)
+	- Eggshell: hsl(30, 54%, 90%)
+	- Light Grey: hsl(30, 18%, 87%)
+	- Wenge Brown: hsl(30, 10%, 34%)
+	- Dark Charcoal: hsl(24, 5%, 18%)
+}
+
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 40em) {
+        flex-direction: column;
+        align-items: center; /* optional, for centering on smaller screens */
+    }
+}
+
+
+nav li a {
+	padding: 15px 30px;
+	text-decoration: none;
+	color: #086d5f;
+	/*Adobe color*/
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family:Young Serif](https://fonts.google.com/specimen/Young+Serif)
+	font-weight: 400;
+	font-family:[Outfit](https://fonts.google.com/specimen/Outfit)
+	font-weight: (400, 600, 700);
+
+}
+
+nav li a:hover {
+	color: #04443c;
+	background: #043a32;
+	color: white;
+}
+
+.promotion {
+	margin-block: 2rem;
+	background: rgba(253, 77, 7, 0.1);
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.wrapper-grid {
+	display: grid;
+	gap: 1rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+
+	border: 2px solid #c27070;
+	border-radius: 5px;
+	background-color: beige;
+	padding-inline: .5rem;
+}
+
+
+.card>img {
+	aspect-ratio: 1/.8;
+	object-fit: cover;
+}
+
+@media (min-width: 40em) {
+	.wrapper-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+footer {
+	margin-top: 2rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: beige;
+
+}
